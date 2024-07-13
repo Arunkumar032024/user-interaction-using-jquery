@@ -12,31 +12,64 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100vw - 300px);
+  width: 100vw;
   height: 50px;
   background-color: #EECEB9;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header i {
+  color: #987D9A;
+}
+header i:hover {
+  cursor: pointer;
+}
+header i:active {
+  transform: scale(0.95);
 }
 header h1 {
-  font-size: 1.625rem;
+  font-size: 0.813rem;
   text-decoration: underline;
   color: #987D9A;
 }
 
 nav {
-  width: 300px;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
   background-color: #EECEB9;
   overflow-y: auto;
+  z-index: 1;
+}
+nav .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.813rem;
+}
+nav .header h2 {
+  font-size: 1.125rem;
+  color: #987D9A;
+}
+nav .header i {
+  font-size: 1.625rem;
+  color: #987D9A;
+}
+nav .header i:hover {
+  cursor: pointer;
+}
+nav .header i:active {
+  transform: scale(0.95);
 }
 
 aside {
+  display: none;
   position: fixed;
   width: 50px;
   height: calc(100vh - 100px);
@@ -53,11 +86,8 @@ aside marquee {
 }
 
 main {
-  width: calc(100vw - 350px);
+  width: 100vw;
   height: calc(100vh - 100px);
-  position: fixed;
-  top: 50px;
-  right: 50px;
   background-color: #FEFBD8;
 }
 
@@ -65,13 +95,17 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: calc(100vw - 300px);
-  height: 50px;
+  width: 100vw;
   background-color: #EECEB9;
   text-align: center;
   padding-top: 10px;
   font-size: 0.813rem;
   color: #987D9A;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 footer a {
   color: #987D9A;

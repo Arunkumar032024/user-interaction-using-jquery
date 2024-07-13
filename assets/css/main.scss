@@ -15,6 +15,34 @@ $font-lg: 1.125rem;
 $font-xl: 1.625rem;
 $font-xll: 1.813rem;
 
+$padding-xxs: 0.125rem;
+$padding-xs: 0.413rem;
+$padding-sm: 0.625rem;
+$padding-md: 0.813rem;
+$padding-lg: 1.125rem;
+$padding-xl: 1.625rem;
+$padding-xll: 1.813rem;
+
+
+$margin-xxs: 0.125rem;
+$margin-xs: 0.413rem;
+$margin-sm: 0.625rem;
+$margin-md: 0.813rem;
+$margin-lg: 1.125rem;
+$margin-xl: 1.625rem;
+$margin-xll: 1.813rem;
+
+
+
+
+@mixin d-flex($d, $jc, $ai){
+    display: flex;
+    flex-direction: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -28,31 +56,55 @@ body{
 }
 
 header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100vw - 300px);
+    width: 100vw;
     height: 50px;
     background-color: $color2;
     text-align: center;
+    @include d-flex(row, space-evenly, center);
+    i{
+        color: $color4;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            transform: scale(0.95);
+        }
+    }
     h1{
-        font-size: $font-xl;
+        font-size: $font-md;
         text-decoration: underline;
         color: $color4;
     }
 }
 
 nav{
-    width: 300px;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     background-color: $color2;
     overflow-y: auto;
+    z-index: 1;
+    // display: none;
+    .header{
+        @include d-flex(row, space-between, center);
+        padding: $padding-md;
+        h2{
+            font-size: $font-lg;
+            color: $color4;
+        }
+        i{
+            font-size: $font-xl;
+            color: $color4;
+            &:hover{ cursor: pointer;}
+            &:active{ transform: scale(0.95);}
+        }
+    }
 }
 
 aside{
+    display: none;
     position: fixed;
     width: 50px;
     height: calc(100vh - 100px);
@@ -69,11 +121,8 @@ aside{
 }
 
 main{
-    width: calc(100vw - 350px);
+    width: 100vw;
     height: calc(100vh - 100px);
-    position: fixed;
-    top: 50px;
-    right: 50px;
     background-color: $color1;
 }
 
@@ -81,13 +130,14 @@ footer{
     position: fixed;
     bottom: 0;
     right: 0;
-    width: calc(100vw - 300px);
-    height: 50px;
+    width: 100vw;
     background-color: $color2;
     text-align: center;
     padding-top: 10px;
     font-size: $font-md;
     color: $color4;
+    padding: $padding-sm;
+    @include d-flex(row, center, center);
     a{
         color: $color4;
         &:hover{
