@@ -1,1 +1,25 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (min-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  header .fa-solid::before {
+    display: none;
+  }
+  nav {
+    display: block;
+    width: 300px;
+    height: calc(100vh - 90px);
+    position: fixed;
+    left: 0;
+    top: 50px;
+  }
+  nav .header i {
+    display: none;
+  }
+  main {
+    width: calc(100vh - 300px);
+  }
+  aside {
+    display: block;
+  }
+}/*# sourceMappingURL=responsive.css.map */

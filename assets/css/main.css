@@ -18,11 +18,12 @@ header {
   text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1.125rem;
 }
 header i {
-  color: #987D9A;
+  color: #8D493A;
 }
 header i:hover {
   cursor: pointer;
@@ -31,9 +32,10 @@ header i:active {
   transform: scale(0.95);
 }
 header h1 {
-  font-size: 0.813rem;
+  font-size: 1.125rem;
   text-decoration: underline;
-  color: #987D9A;
+  color: #8D493A;
+  font-weight: bold;
 }
 
 nav {
@@ -45,6 +47,7 @@ nav {
   background-color: #EECEB9;
   overflow-y: auto;
   z-index: 1;
+  display: none;
 }
 nav .header {
   display: flex;
@@ -55,11 +58,11 @@ nav .header {
 }
 nav .header h2 {
   font-size: 1.125rem;
-  color: #987D9A;
+  color: #8D493A;
 }
 nav .header i {
   font-size: 1.625rem;
-  color: #987D9A;
+  color: #8D493A;
 }
 nav .header i:hover {
   cursor: pointer;
@@ -72,7 +75,7 @@ aside {
   display: none;
   position: fixed;
   width: 50px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
   right: 0;
   top: 50px;
   background-color: #EECEB9;
@@ -82,7 +85,7 @@ aside marquee {
   width: 100%;
   text-align: center;
   font-weight: bold;
-  color: #987D9A;
+  color: #8D493A;
 }
 
 main {
@@ -100,7 +103,7 @@ footer {
   text-align: center;
   padding-top: 10px;
   font-size: 0.813rem;
-  color: #987D9A;
+  color: #8D493A;
   padding: 0.625rem;
   display: flex;
   flex-direction: row;
@@ -108,7 +111,7 @@ footer {
   align-items: center;
 }
 footer a {
-  color: #987D9A;
+  color: #8D493A;
 }
 footer a:hover {
   color: #FEFBD8;
