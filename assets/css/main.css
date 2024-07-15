@@ -70,6 +70,27 @@ nav .header i:hover {
 nav .header i:active {
   transform: scale(0.95);
 }
+nav .interactions {
+  padding: 0.813rem;
+}
+nav .interactions h3 {
+  background-color: #FEFBD8;
+  padding: 0.413rem;
+}
+nav .interactions ul {
+  padding: 0.413rem;
+  list-style: none;
+}
+nav .interactions ul li {
+  margin-bottom: 0.413rem;
+}
+nav .interactions ul li a {
+  color: #e980c9;
+}
+nav .interactions ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 aside {
   display: none;
@@ -92,6 +113,15 @@ main {
   width: 100vw;
   height: calc(100vh - 100px);
   background-color: #FEFBD8;
+  padding: 0.625rem;
+}
+main section h2 {
+  font-size: 1.625rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 10px solid red;
+}
+main section h2 + p {
+  padding: 0.413rem;
 }
 
 footer {

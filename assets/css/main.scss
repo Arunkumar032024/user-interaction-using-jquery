@@ -3,7 +3,7 @@
 
 $color1: #FEFBD8;
 $color2: #EECEB9;
-$color3: #BB9AB1;
+$color3: #e980c9;
 $color4: #8D493A;
 
 
@@ -105,6 +105,28 @@ nav{
             &:active{ transform: scale(0.95);}
         }
     }
+
+    .interactions{
+        padding: $padding-md;
+        h3{
+            background-color: $color1;
+            padding: $padding-xs;
+        }
+        ul{
+            padding: $padding-xs;
+            list-style: none;
+            li{
+                margin-bottom: $margin-xs;
+                a{
+                    color: $color3;
+                    &:hover{
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }
 
 aside{
@@ -128,6 +150,18 @@ main{
     width: 100vw;
     height: calc(100vh - 100px);
     background-color: $color1;
+    padding: $padding-sm;
+    section{
+        h2{
+            font-size: $font-xl;
+            padding-bottom: $padding-sm;
+            border-bottom: 10px solid red;
+        }
+        h2+p{
+            padding: $padding-xs;
+        }
+        
+    }
 }
 
 footer{
