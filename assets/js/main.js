@@ -26,4 +26,11 @@ $(document).ready(function(){
         $('section').slideUp();
         $('section#draggable').slideDown();
     })
+
+
+
+
+    // code for draggable section
+    $(".app").draggable();
+    // End code for draggable section
 })

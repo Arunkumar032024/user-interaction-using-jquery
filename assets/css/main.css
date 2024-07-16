@@ -123,6 +123,41 @@ main section h2 {
 main section h2 + p {
   padding: 0.413rem;
 }
+main section .experiment-div {
+  width: 100%;
+  min-height: 50vh;
+  border: 1px solid #8D493A;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main section .experiment-div .app {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+main section .experiment-div .app:hover {
+  background-color: rgba(190, 183, 183, 0.4196078431);
+}
+main section .experiment-div .app i {
+  font-size: 1.813rem;
+}
+main section .experiment-div .app span {
+  font-size: 0.625rem;
+  font-weight: bold;
+}
 
 footer {
   position: fixed;

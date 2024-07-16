@@ -160,7 +160,34 @@ main{
         h2+p{
             padding: $padding-xs;
         }
-        
+        .experiment-div{
+            width: 100%;
+            min-height: 50vh;
+            border: 1px solid $color4;
+            padding: $padding-sm;
+            @include d-flex(row, space-between, flex-start);
+            .app{
+                width: 60px;
+                height: 60px;
+                border-radius: 5px;
+                @include d-flex(column, center, center);
+                gap: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease-in-out;
+                &:hover{
+                    background-color: #beb7b76b;
+                }
+                user-select: none;
+                i{
+                    font-size: $font-xll;
+                }
+                span{
+                    font-size: $font-sm;
+                    font-weight: bold;
+                }
+
+            }
+        }
     }
 }
 
