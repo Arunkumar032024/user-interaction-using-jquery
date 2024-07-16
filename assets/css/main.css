@@ -118,7 +118,7 @@ main {
 main section h2 {
   font-size: 1.625rem;
   padding-bottom: 0.625rem;
-  border-bottom: 10px solid red;
+  border-bottom: 10px solid #EECEB9;
 }
 main section h2 + p {
   padding: 0.413rem;

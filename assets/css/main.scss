@@ -155,7 +155,7 @@ main{
         h2{
             font-size: $font-xl;
             padding-bottom: $padding-sm;
-            border-bottom: 10px solid red;
+            border-bottom: 10px solid $color2;
         }
         h2+p{
             padding: $padding-xs;
