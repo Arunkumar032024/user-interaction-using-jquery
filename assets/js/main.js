@@ -99,8 +99,20 @@ $(document).ready(function(){
             }
         
         }
-    });
-
-    
+    });  
     // End code for droppable section 
+
+
+
+    // code for resizable section 
+    const resizable = $("a[href='#resizable']");
+    resizable.click(function(){
+        if(window.innerWidth < 768){
+            nav.slideUp();
+        }
+        $('section').slideUp();
+        $('section#resizable').slideDown();
+    })
+    $( "#resizable img" ).resizable();
+    // End code for resizable section 
 })

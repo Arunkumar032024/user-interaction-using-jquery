@@ -189,6 +189,13 @@ main section#droppable .experiment-div p span {
 main section#droppable .experiment-div p span.result {
   cursor: pointer;
 }
+main section#resizable .experiment-div img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+}
 
 footer {
   position: fixed;

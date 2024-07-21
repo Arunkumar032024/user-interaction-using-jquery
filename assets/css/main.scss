@@ -213,6 +213,16 @@ main{
             }
         }
     }
+    section#resizable{
+        .experiment-div{
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+    }
 }
 
 footer{
