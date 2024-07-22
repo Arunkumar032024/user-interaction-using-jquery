@@ -223,6 +223,26 @@ main{
             }
         }
     }
+    section#selectable{
+        
+        .experiment-div{
+            max-height: 50vh;
+            overflow-y: scroll;
+            ol{
+                width: 50%;
+                list-style: none;
+                .ui-selecting { background: $color2; }
+                .ui-selected { background: $color2;}
+                li{
+                    border: 1px solid $color3;
+                    padding: $padding-sm;
+                    margin-bottom: $margin-xs;
+                    font-weight: bolder;
+                    color: $color4; 
+                }
+            }
+        }
+    }
 }
 
 footer{

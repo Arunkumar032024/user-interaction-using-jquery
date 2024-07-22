@@ -115,4 +115,17 @@ $(document).ready(function(){
     })
     $( "#resizable img" ).resizable();
     // End code for resizable section 
+    
+    
+    // code for resizable section 
+    const selectable = $("a[href='#selectable']");
+    selectable.click(function(){
+        if(window.innerWidth < 768){
+            nav.slideUp();
+        }
+        $('section').slideUp();
+        $('section#selectable').slideDown();
+    })
+    $( "#selectable ol" ).selectable();
+    // End code for resizable section 
 })
