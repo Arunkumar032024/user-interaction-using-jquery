@@ -117,7 +117,7 @@ $(document).ready(function(){
     // End code for resizable section 
     
     
-    // code for resizable section 
+    // code for selectable section 
     const selectable = $("a[href='#selectable']");
     selectable.click(function(){
         if(window.innerWidth < 768){
@@ -127,5 +127,18 @@ $(document).ready(function(){
         $('section#selectable').slideDown();
     })
     $( "#selectable ol" ).selectable();
-    // End code for resizable section 
+    // End code for selectable section 
+    
+    
+    // code for sortable section 
+    const sortable = $("a[href='#sortable']");
+    sortable.click(function(){
+        if(window.innerWidth < 768){
+            nav.slideUp();
+        }
+        $('section').slideUp();
+        $('section#sortable').slideDown();
+    })
+    $( "#sortable ol" ).sortable();
+    // End code for sortable section 
 })

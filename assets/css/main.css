@@ -196,21 +196,26 @@ main section#resizable .experiment-div img {
      object-fit: cover;
   border-radius: 4px;
 }
-main section#selectable .experiment-div {
+main section#selectable .experiment-div,
+main section#sortable .experiment-div {
   max-height: 50vh;
   overflow-y: scroll;
 }
-main section#selectable .experiment-div ol {
+main section#selectable .experiment-div ol,
+main section#sortable .experiment-div ol {
   width: 50%;
   list-style: none;
 }
-main section#selectable .experiment-div ol .ui-selecting {
+main section#selectable .experiment-div ol .ui-selecting,
+main section#sortable .experiment-div ol .ui-selecting {
   background: #EECEB9;
 }
-main section#selectable .experiment-div ol .ui-selected {
+main section#selectable .experiment-div ol .ui-selected,
+main section#sortable .experiment-div ol .ui-selected {
   background: #EECEB9;
 }
-main section#selectable .experiment-div ol li {
+main section#selectable .experiment-div ol li,
+main section#sortable .experiment-div ol li {
   border: 1px solid #e980c9;
   padding: 0.625rem;
   margin-bottom: 0.413rem;

@@ -223,7 +223,8 @@ main{
             }
         }
     }
-    section#selectable{
+    section#selectable,
+    section#sortable{
         
         .experiment-div{
             max-height: 50vh;
