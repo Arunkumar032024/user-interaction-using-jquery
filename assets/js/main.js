@@ -141,4 +141,16 @@ $(document).ready(function(){
     })
     $( "#sortable ol" ).sortable();
     // End code for sortable section 
+
+
+
+    const accordian = $("a[href='#accordian']");
+    accordian.click(function(){
+        if(window.innerWidth < 768){
+            nav.slideUp();
+        }
+        $('section').slideUp();
+        $('section#accordion').slideDown();
+    })
+    $('section#accordion div').accordion();
 })

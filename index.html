@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,10 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 
     <!-- jquery cdn  -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
 </head>
+
 <body>
     <!-- header section -->
     <header>
@@ -40,6 +42,23 @@
                 <li><a href="#resizable">Resizable</a></li>
                 <li><a href="#selectable">Selectable</a></li>
                 <li><a href="#sortable">Sortable</a></li>
+            </ul>
+            <h3>Widgets</h3>
+            <ul>
+                <li><a href="#accordian">Accordion</a></li>
+                <li><a href="#">Autocomplete</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Checkboxradio</a></li>
+                <li><a href="#">Controlgroup</a></li>
+                <li><a href="#">Datepicker</a></li>
+                <li><a href="#">Dialog</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Progressbar</a></li>
+                <li><a href="#">Selectmenu</a></li>
+                <li><a href="#">Slider</a></li>
+                <li><a href="#">Spinner</a></li>
+                <li><a href="#">Tabs</a></li>
+                <li><a href="#">Tooltip</a></li>
             </ul>
         </div>
     </nav>
@@ -82,140 +101,159 @@
     <main>
 
         <!-- interactions -->
-           <!-- draggable interaction -->
-            <section id="draggable">
-                <h2>Draggable</h2>
-                <p>Allow elements to be moved using the mouse.</p>
-                <div class="experiment-div">
-                    <div class="app ui-widget-content">
-                        <i class="fa-brands fa-whatsapp" style="color: green"></i>
-                        <span>Whatsapp</span>
-                    </div>
-                    <div class="app ui-widget-content">
-                        <i class="fa-brands fa-facebook" style="color: rgb(55, 88, 235);"></i>
-                        <span>Facebook</span>
-                    </div>
-                    <div class="app ui-widget-content">
-                        <i class="fa-brands fa-linkedin" style="color: blue;"></i>
-                        <span>Linkedin</span>
-                    </div>
-                    <div class="app ui-widget-content">
-                        <i class="fa-brands fa-instagram" style="color: palevioletred;"></i>
-                        <span>Instagram</span>
-                    </div>
+        <!-- draggable interaction -->
+        <section id="draggable">
+            <h2>Draggable</h2>
+            <p>Allow elements to be moved using the mouse.</p>
+            <div class="experiment-div">
+                <div class="app ui-widget-content">
+                    <i class="fa-brands fa-whatsapp" style="color: green"></i>
+                    <span>Whatsapp</span>
                 </div>
-            </section>
-           <!-- End draggable interaction -->
-
-
-           <!-- droppable interaction -->
-            <section id="droppable">
-                <h2>Droppable</h2>
-                <p>Create targets for draggable elements.</p>
-                <div class="experiment-div">
-                    <p>
-                        <span class="oprand-1">10</span>
-                        <span class="symbol">+</span>
-                        <span class="oprand-2">20</span>
-                        <span class="equal">=</span>
-                        <span class="sum"></span>
-                    </p>
-                    <p>
-                        <span class="oprand-1">20</span>
-                        <span class="symbol">-</span>
-                        <span class="oprand-2">15</span>
-                        <span class="equal">=</span>
-                        <span class="diff"></span>
-                    </p>
-                    <p>
-                        <span class="oprand-1">10</span>
-                        <span class="symbol">*</span>
-                        <span class="oprand-2">8</span>
-                        <span class="equal">=</span>
-                        <span class="mul"></span>
-                    </p>
-                    <p>
-                        <span class="oprand-1">55</span>
-                        <span class="symbol">/</span>
-                        <span class="oprand-2">5</span>
-                        <span class="equal">=</span>
-                        <span class="div"></span>
-                    </p>
-                    <p>
-                        <span class="result" id="sum">80</span>
-                        <span class="result" id="diff">5</span>
-                        <span class="result" id="mul">30</span>
-                        <span class="result" id="div">11</span>
-                    </p>
+                <div class="app ui-widget-content">
+                    <i class="fa-brands fa-facebook" style="color: rgb(55, 88, 235);"></i>
+                    <span>Facebook</span>
                 </div>
-            </section>
-           <!-- End droppable interaction -->
-
-           <!-- Resizable interaction  -->
-            <section id="resizable">
-                <h2>Resizable</h2>
-                <p>Change the size of an element using the mouse.</p>
-                <div class="experiment-div">
-                    <img src="./assets/images/resizable.jpeg" alt="resizable image" />
+                <div class="app ui-widget-content">
+                    <i class="fa-brands fa-linkedin" style="color: blue;"></i>
+                    <span>Linkedin</span>
                 </div>
-            </section>
-           <!-- End Resizable interaction  -->
-
-
-           <!-- Selectable interaction -->
-            <section id="selectable">
-                <h2>Selectable</h2>
-                <p>Use the mouse to select elements, individually or in a group.</p>
-                <div class="experiment-div">
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>JQUERY</li>
-                        <li>BOOTSTRAP</li>
-                        <li>TAILWIND</li>
-                        <li>GIT</li>
-                        <li>GITHUB</li>
-                    </ol>
+                <div class="app ui-widget-content">
+                    <i class="fa-brands fa-instagram" style="color: palevioletred;"></i>
+                    <span>Instagram</span>
                 </div>
-            </section>
-           <!-- End Selectable interaction -->
+            </div>
+        </section>
+        <!-- End draggable interaction -->
 
 
-           <!-- sortable interaction -->
-            <section id="sortable">
-                <h2>Sortable</h2>
-                <p>Reorder elements in a list or grid using the mouse.</p>
-                <div class="experiment-div">
-                    <ol>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>JQUERY</li>
-                        <li>BOOTSTRAP</li>
-                        <li>TAILWIND</li>
-                        <li>GIT</li>
-                        <li>GITHUB</li>
-                    </ol>
-                </div>
-            </section>
-           <!-- End sortable interaction -->
+        <!-- droppable interaction -->
+        <section id="droppable">
+            <h2>Droppable</h2>
+            <p>Create targets for draggable elements.</p>
+            <div class="experiment-div">
+                <p>
+                    <span class="oprand-1">10</span>
+                    <span class="symbol">+</span>
+                    <span class="oprand-2">20</span>
+                    <span class="equal">=</span>
+                    <span class="sum"></span>
+                </p>
+                <p>
+                    <span class="oprand-1">20</span>
+                    <span class="symbol">-</span>
+                    <span class="oprand-2">15</span>
+                    <span class="equal">=</span>
+                    <span class="diff"></span>
+                </p>
+                <p>
+                    <span class="oprand-1">10</span>
+                    <span class="symbol">*</span>
+                    <span class="oprand-2">8</span>
+                    <span class="equal">=</span>
+                    <span class="mul"></span>
+                </p>
+                <p>
+                    <span class="oprand-1">55</span>
+                    <span class="symbol">/</span>
+                    <span class="oprand-2">5</span>
+                    <span class="equal">=</span>
+                    <span class="div"></span>
+                </p>
+                <p>
+                    <span class="result" id="sum">80</span>
+                    <span class="result" id="diff">5</span>
+                    <span class="result" id="mul">30</span>
+                    <span class="result" id="div">11</span>
+                </p>
+            </div>
+        </section>
+        <!-- End droppable interaction -->
+
+        <!-- Resizable interaction  -->
+        <section id="resizable">
+            <h2>Resizable</h2>
+            <p>Change the size of an element using the mouse.</p>
+            <div class="experiment-div">
+                <img src="./assets/images/resizable.jpeg" alt="resizable image" />
+            </div>
+        </section>
+        <!-- End Resizable interaction  -->
 
 
+        <!-- Selectable interaction -->
+        <section id="selectable">
+            <h2>Selectable</h2>
+            <p>Use the mouse to select elements, individually or in a group.</p>
+            <div class="experiment-div">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>JQUERY</li>
+                    <li>BOOTSTRAP</li>
+                    <li>TAILWIND</li>
+                    <li>GIT</li>
+                    <li>GITHUB</li>
+                </ol>
+            </div>
+        </section>
+        <!-- End Selectable interaction -->
+
+
+        <!-- sortable interaction -->
+        <section id="sortable">
+            <h2>Sortable</h2>
+            <p>Reorder elements in a list or grid using the mouse.</p>
+            <div class="experiment-div">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>JQUERY</li>
+                    <li>BOOTSTRAP</li>
+                    <li>TAILWIND</li>
+                    <li>GIT</li>
+                    <li>GITHUB</li>
+                </ol>
+            </div>
+        </section>
+        <!-- End sortable interaction -->
         <!-- End interactions -->
+
+
+        <!-- widgets -->
+        <!-- accordian widgets -->
+            <section id="accordion">
+                <h2>Accordion</h2>
+                <p>Displays collapsible content panels for presenting information in a limited amount of space.</p>
+                <div class="experiment-div">
+                    <h3>html</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quam enim officia voluptatem et aperiam veniam placeat illum iste. Ratione architecto sit cum suscipit dolor quo dicta ducimus eligendi praesentium.</p>
+                    <h3>html</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quam enim officia voluptatem et aperiam veniam placeat illum iste. Ratione architecto sit cum suscipit dolor quo dicta ducimus eligendi praesentium.</p>
+                    <h3>html</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quam enim officia voluptatem et aperiam veniam placeat illum iste. Ratione architecto sit cum suscipit dolor quo dicta ducimus eligendi praesentium.</p>
+                </div>
+            </section>
+        </div>
+        <!-- End accordian widgets -->
+        <!-- End widgets -->
 
     </main>
     <!-- End main section -->
 
     <!-- footer section -->
     <footer>
-        <p>copyright &copy; 2024 by <a href="#">Developer AK</a>, Developed by <a href="mailto:arunkumar032024@gmail.com">Arun kumar</a></p>
+        <p>copyright &copy; 2024 by <a href="#">Developer AK</a>, Developed by <a
+                href="mailto:arunkumar032024@gmail.com">Arun kumar</a></p>
     </footer>
     <!-- End footer section -->
 
     <script src="./assets/js/main.js"></script>
 
 </body>
+
 </html>
