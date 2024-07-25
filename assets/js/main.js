@@ -152,5 +152,6 @@ $(document).ready(function(){
         $('section').slideUp();
         $('section#accordion').slideDown();
     })
-    $('section#accordion div').accordion();
+    $('section#accordion #accordion-section').accordion();
+
 })

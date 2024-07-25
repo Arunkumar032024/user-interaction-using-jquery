@@ -256,9 +256,7 @@ main{
     }
 
     section#accordion{
-        .experiment-div{
-            display: block;
-            background-color: red;
+        #accordion-section{
             h3{
                 color: $color4;
                 background-color: $color2;
@@ -267,13 +265,12 @@ main{
                     color: $color1;
                 }
             }
-            p{
-                color: $color4;
-                padding: $padding-xll $padding-md;
-                display: block;
-                min-height: 10vh;
-                padding: 15px;
+            div{
+                max-height: fit-content;
+                overflow: visible;
+                height: 30vh;
             }
+            
         }
     }
 }

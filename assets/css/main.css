@@ -234,24 +234,19 @@ main section#sortable .experiment-div ol li {
   font-weight: bolder;
   color: #8D493A;
 }
-main section#accordion .experiment-div {
-  display: block;
-  background-color: red;
-}
-main section#accordion .experiment-div h3 {
+main section#accordion #accordion-section h3 {
   color: #8D493A;
   background-color: #EECEB9;
 }
-main section#accordion .experiment-div h3:focus {
+main section#accordion #accordion-section h3:focus {
   background-color: #8D493A;
   color: #FEFBD8;
 }
-main section#accordion .experiment-div p {
-  color: #8D493A;
-  padding: 1.813rem 0.813rem;
-  display: block;
-  min-height: 10vh;
-  padding: 15px;
+main section#accordion #accordion-section div {
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  overflow: visible;
+  height: 30vh;
 }
 
 footer {
